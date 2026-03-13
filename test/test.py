@@ -3,16 +3,16 @@ from src import sample_hello_world_script as hw
 
 
 def setup_function(function):
-    """Выполняется перед каждым тестом"""
+    """Performed before each test"""
     print(f"\nYou have called setUp() for {function.__name__}")
 
 
 def teardown_function(function):
-    """Выполняется после каждого теста"""
+    """Performed after each test"""
     print(f"You have called tearDown() for {function.__name__}")
 
 
-# --- Тесты ---
+# --- Tests  ---
 
 def test_first_function_to_uppercase():
     input_value = 'Venkatt Guhesan'
